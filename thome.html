@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="../style/site.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="/img/legion.img.png" class="logo" alt="Legion">
+            <div>
+                <h1>Legion</h1>
+                <div style="color:var(--muted)">Gaming community — founded 2022</div>
+            </div>
+        </header>
+
+        <div class="grid" style="margin-top:24px;">
+            <main>
+                <div class="card">
+                    <h2 style="color:var(--accent-2);margin-top:0">History</h2>
+                    <p style="color:var(--muted);font-size:1.05rem">This group was created in 2022 by two friends, <a href="https://steamcommunity.com/profiles/76561199383598996/">Dr.livesey</a> and <a href="https://steamcommunity.com/profiles/76561199364257113/">Pyff</a>. They wanted a place to play together, host events and support newcomers.</p>
+                    <div style="margin-top:18px;">
+                        <a class="btn" href="https://steamcommunity.com/groups/Leg1on_ua">Join Steam Group</a>
+                        <a class="btn" href="https://www.youtube.com/@lowskillgamer2218" style="background:transparent;border:1px solid rgba(255,255,255,0.06);margin-left:8px;color:var(--accent-2)">YouTube</a>
+                    </div>
+                </div>
+
+                <div style="height:18px"></div>
+
+                <div class="card">
+                    <h2 style="color:var(--accent-2)">Interesting facts</h2>
+                    <ul>
+                        <li>Weekly meetups and tournaments</li>
+                        <li>Active Discord server</li>
+                        <li>Friendly admins and helpers</li>
+                        <li>Open to new members</li>
+                    </ul>
+                </div>
+
+                <div style="height:18px"></div>
+
+                <div class="card">
+                    <h2 style="color:var(--accent-2)">Gallery</h2>
+                    <div class="gallery">
+                        <img src="/img/20250701_222453.jpg" alt="">
+                        <img src="/img/20250702_193235.jpg" alt="">
+                        <img src="/img/20250702_193938.jpg" alt="">
+                        <img src="/img/20250702_200422.jpg" alt="">
+                        <img src="/img/20230910_144517.jpg" alt="">
+                    </div>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <div class="card">
+                    <h3 style="margin-top:0;color:var(--accent-2)">Quick links</h3>
+                    <a class="nav-item" href="thome.html">Home</a>
+                    <a class="nav-item" href="1games.html">Games</a>
+                    <a class="nav-item" href="1orders.html">Orders</a>
+                </div>
+
+                <div style="height:18px"></div>
+
+                <div class="card">
+                    <h3 style="margin-top:0;color:var(--accent-2)">Contacts</h3>
+                    <p style="color:var(--muted);margin-bottom:8px">Contact admins:</p>
+                    <ul style="margin:0;padding-left:18px;color:#fff">
+                        <li><a href="https://steamcommunity.com/profiles/76561199383598996/">Dr.livesey</a></li>
+                        <li><a href="https://steamcommunity.com/profiles/76561199364257113/">Pyff</a></li>
+                        <li><a href="mailto:legion.ua@gmail.com">legion.ua@gmail.com</a></li>
+                    </ul>
+                </div>
+                        <div style="height:18px"></div>
+                        <div class="card">
+                            <h3 style="margin-top:0;color:var(--accent-2)">Donate</h3>
+                            <div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+                                <div class="qr-block"><a href="/img/Pr24.jpg" target="_blank"><img src="/img/Pr24.jpg" alt="Pr24 QR"></a><div class="label">Pr24</div></div>
+                                <div class="qr-block"><a href="/img/mono.jpg" target="_blank"><img src="/img/mono.jpg" alt="Mono QR"></a><div class="label">Mono</div></div>
+                            </div>
+                        </div>
+            </aside>
+        </div>
+
+        <footer class="footer">© Legion — All rights reserved</footer>
+    </div>
+        <!-- Modal preview for QR images -->
+        <div id="imgModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);align-items:center;justify-content:center;z-index:9999">
+            <img id="imgModalContent" src="" style="max-width:90%;max-height:90%;border-radius:12px;box-shadow:0 8px 40px #000;">
+        </div>
+        <script>
+            document.querySelectorAll('.qr-block a').forEach(a=>{
+                a.addEventListener('click', function(e){
+                    e.preventDefault();
+                    const src = this.getAttribute('href');
+                    const modal = document.getElementById('imgModal');
+                    const img = document.getElementById('imgModalContent');
+                    img.src = src;
+                    modal.style.display = 'flex';
+                })
+            })
+            document.getElementById('imgModal').addEventListener('click', function(){
+                this.style.display='none';
+                document.getElementById('imgModalContent').src='';
+            })
+        </script>
+</body>
+</html>

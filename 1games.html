@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+	.games-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 50px 50px;
+		margin-bottom: 72px;
+	}
+	.game-row {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 0;
+	}
+	.game-img {
+		width: 300px;
+		height: 300px;
+		object-fit: cover;
+		border: 8px solid #0090ff;
+		border-radius: 32px;
+		background: #222;
+		margin-right: 72px;
+	}
+	.game-stats {
+		color: #fff;
+		font-size: 40px;
+		background: #23272b;
+		border-radius: 24px;
+		padding: 48px 72px;
+		min-width: 300px;
+		box-shadow: 0 8px 32px #0004;
+	}
+	body {
+		background: #222;
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 100px;
+		padding-left: 130px;
+	}
+</style>
+</head>
+<body>
+	<div id="sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(r => r.text())
+    .then(html => document.getElementById('sidebar').innerHTML = html);
+</script>
+		<div class="games-grid">
+			<div class="game-row">
+				<img class="game-img" src="https://cdn1.epicgames.com/spt-assets/53ec4985296b4facbe3a8d8d019afba9/pubg-battlegrounds-16v1j.jpg" alt="Game 1">
+				<div class="game-stats">
+					<b>Pubg</b><br>
+					Game matches: 12,000<br>
+					Wins: 54%<br>
+					Losses: 46%
+				</div>
+			</div>
+			<div class="game-row">
+				<img class="game-img" src="https://upload.wikimedia.org/wikipedia/ru/d/db/Counter-strike_2.jpg" alt="Game 2">
+				<div class="game-stats">
+					<b>Cs 2</b><br>
+					Game matches: 8,500<br>
+					Wins: 87%<br>
+					Losses: 13%
+				</div>
+			</div>
+			<div class="game-row">
+				<img class="game-img" src="https://images.gog-statics.com/997a880a5624334e379dfe5bfc63191f8af379937de97d821c6ccba044899c2a_product_card_v2_mobile_slider_639.jpg" alt="Game 3">
+				<div class="game-stats">
+		         <b>Project zomboid</b><br>
+		          Hours: 700<br>
+		          Max day: 479 <br>
+	            </div>
+</div>
+<div class="game-row">
+	<img class="game-img" src="https://upload.wikimedia.org/wikipedia/en/2/25/War_Thunder_PSN_Cover_Art_2015_Playstation_4.png" alt="Game 4">
+	<div class="game-stats">
+		<b>War thunder</b><br>
+		Game matches: 6,700<br>
+		Wins: 47%<br>
+		Losses: 53%
+	</div>
+</div>
+</body>
+</html>
+
+
+

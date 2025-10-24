@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidebar-contacts {
+            padding: 10px 0px;
+        }
+        .sidebar-contacts h2 {
+            color: #ffe066;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .sidebar {
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 120px;
+				height: 100vh;
+				background: #23272b;
+				padding: 24px 0 0 0;
+				box-shadow: 2px 0 8px #0002;
+                text-decoration: none;
+                border-radius: 0 24px 24px 0; }
+                .sidebar-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 12px #0003;}
+            .sidebar ul {
+				list-style: none;
+				padding: 0 0 0 10px;
+				margin: 0; }
+			.sidebar > ul > li {margin-bottom: 18px;}
+			.sidebar b {
+				font-size: 18px;
+				color: #e2e6ea;
+				cursor: pointer;
+				display: block;
+				margin-bottom: 6px;}
+			.sidebar ul ul { margin-left: 8px; }
+			.sidebar ul ul li {
+				font-size: 15px;
+				color: #cfd8dc;
+				margin-bottom: 4px;
+				cursor: pointer;
+				transition: color 0.2s;}
+			.sidebar ul ul li:hover { color: #7ec7ff; }
+            .sidebar b a:hover {
+            background: #2c3e50;
+            color: #7ec7ff;}
+            .sidebar b a {
+            font-size: 20px;}
+        .donate {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;}
+        a { color: yellowgreen; text-decoration: none;}
+        a:hover { text-decoration: underline; color: aqua; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="/img/legion.img.png" alt="Logo" class="sidebar-logo">
+        <br>
+	 <ul>
+		<li><b><a href="thome.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" style="vertical-align:middle;margin-right:6px;"><path d="M8 .5l-7 7V15a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V11h2v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V7.5l-7-7zm7 7.5V15a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V11H5v4a2 2 0 0 1-2 2H1a2 2 0 0 1-2-2V8.5l8-8 8 8z"/></svg>
+                Home</a></b></li>
+                <br>
+            <li><b><a href="1games.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:6px;"><path d="M21.5 13.5c-.3 0-.5.2-.5.5v2c0 1.1-.9 2-2 2h-1c-.6 0-1-.4-1-1v-1c0-.6-.4-1-1-1h-6c-.6 0-1 .4-1 1v1c0 .6-.4 1-1 1h-1c-1.1 0-2-.9-2-2v-2c0-.3-.2-.5-.5-.5s-.5.2-.5.5v2c0 1.7 1.3 3 3 3h1c1.1 0 2-.9 2-2v-1h6v1c0 1.1.9 2 2 2h1c1.7 0 3-1.3 3-3v-2c0-.3-.2-.5-.5-.5zM7 10c.6 0 1-.4 1-1s-.4-1-1-1-1 .4-1 1 .4 1 1 1zm10 0c.6 0 1-.4 1-1s-.4-1-1-1-1 .4-1 1 .4 1 1 1zm-5-7c-4.4 0-8 3.6-8 8v2c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-2c0-3.3 2.7-6 6-6s6 2.7 6 6v2c0 .6.4 1 1 1h1c.6 0 1-.4 1-1v-2c0-4.4-3.6-8-8-8z"/></svg>
+                Games</a></b></li>
+                <br>
+            <li><b><a href="1orders.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"></path>
+                </svg></path>  Orders</a></b></li>
+            <div class="sidebar-contacts">
+                <h2>Контакти</h2>
+                <ul>
+                    <li><a href="https://steamcommunity.com/profiles/76561199383598996/">Dr.livesey (Steam)</a></li>
+                    <li><a href="https://steamcommunity.com/profiles/76561199364257113/">Pyff (Steam)</a></li>
+                </ul>
+            </div>
+            <div class="donate">
+            <li>
+             <p style="color: white;" >donate <br> Pr24</p>
+            </li>
+            <li><img width="100px" height="100px" src="/img/Pr24.jpg" alt=""></li>
+            <li><p style="color: white;" > Mono </p></li>
+            <li><img width="100px" height="100px" src="/img/mono.jpg" alt=""></li>
+            </div>
+         </ul>
+	 </ul>
+	</div>
+</body>
+</html>
+     
+<div id="sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(r => r.text())
+    .then(html => document.getElementById('sidebar').innerHTML = html);
+</script>
+
+

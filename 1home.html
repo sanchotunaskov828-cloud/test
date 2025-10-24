@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        h1 { text-align: center; font-size: 60px;}
+        h2 { font-size: 50px; text-align: center; }
+        body {
+            background: linear-gradient(120deg, #0f2027, #2c5364 80%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-left: 160px;
+        }
+        .center { text-align: center; }
+        .big { font-size: 50px; }
+        .container {
+           width: min( 1800px, 100%);
+           margin: 0 auto;
+           columns: 4 300px;
+           column-gap: 1em;
+           }
+        .photo-frame {
+                border: 4px solid #222;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+                padding: 4px;
+                background: #fff;
+            }
+        .photo-frame2 {
+                border: 4px solid #222;
+                border-radius: 30px;
+                box-shadow: 0 20px 15px rgba(0,0,0,0.15);
+                padding: 4px;
+                background: yellow;
+            }
+         #chart-container { width: 90vw; height: 60vh; margin: 40px auto; }
+         @media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="sidebar"></div>
+<script>
+  fetch('sidebar.html')
+    .then(r => r.text())
+    .then(html => document.getElementById('sidebar').innerHTML = html);
+</script>
+    <h1 style="color: yellow ;"> Legion</h1>
+    <br>
+    <br>
+    <div class="center">
+    <a href="https://steamcommunity.com/groups/Leg1on_ua"><img class="photo-frame" width="400" height="400" src="/img/legion.img.png"></a>
+    </div>
+    <br>
+    <h2 style="color: whitesmoke;"> history</h2>
+    <div class="big">
+     <p style="color: #7ec7ff;" class="center"> This group was created in 2022.<br> Time when it was really difficult, two friends <a href="https://steamcommunity.com/profiles/76561199383598996/">Dr.livesey</a> and <a href="https://steamcommunity.com/profiles/76561199364257113/">Pyff</a>
+     decided to create this community that would unite all friends</p>
+     <div style="gap:24px;">
+                <div class="col-md-6" style="background:#2c3e50;border-radius:18px;padding:24px;box-shadow:0 2px 12px #0003;">
+                    <h2 style="color:#ffe066;font-size:2em;">Interesting facts</h2>
+                    <ul style="font-size:1.2em; color:#fff;">
+                        <li>Over 100 members in the Steam group</li>
+                        <li>Weekly online meetings and tournaments</li>
+                        <li>Own Discord server for communication</li>
+                        <li>Support for newbies and help with games</li>
+                    </ul>
+    </div>
+     <a href="https://www.youtube.com/@lowskillgamer2218"><p style="text-align: center;">Youtube</p></a>
+     <div class="container">
+        <div><img width="300xp" class="photo-frame2" src="/img/20250701_222453.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="/img/20250702_193235.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="/img/20250702_193938.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="/img/20250702_200422.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="/img/20230910_144517.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="https://www.printique.com/wp-content/uploads/2016/10/photography-landscape-adoramapix.jpg?width=650" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="https://cdn.visualwilderness.com/wp-content/uploads/2018/12/New-Zealand-5D_1148.jpg" alt=""></div>
+        <div><img width="300xp" class="photo-frame2" src="https://media.posterstore.com/site_images/6863012892c536b9cc92aab5_1532587485_PS52858-5.jpg?auto=compress%2Cformat&fit=max&w=3840" alt=""></div>
+     </div>
+    </div>
+    <p class="big" style="color: #7ec7ff;">We are always glad to see new members in our community, so if you want to join us, please contact one of the administrators (Dr.livesey or Pyff).</p>
+</body>
+</html>
